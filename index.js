@@ -1,5 +1,6 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+//import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
 
 class Main extends React.Component {
   render() {
@@ -11,4 +12,6 @@ class Main extends React.Component {
   }
 }
 
-ReactDOM.render(<Main />, document.getElementById('root'));
+//ReactDOM.render(<Main />, document.getElementById("root"));
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<Main />);
